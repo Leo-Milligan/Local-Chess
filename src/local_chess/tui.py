@@ -44,7 +44,7 @@ class MainMenu(Screen):
             yield Label(title, id="title")
             yield Button("Singleplayer - Comming Soon!", variant="success", disabled=True, id="play_button_ai")
             yield Button("Multiplayer (Local)", variant="success", id="play_button_local")
-            yield Button("Mulitplayer (LAN)", variant="success", id="play_button_lan")
+            yield Button("Multiplayer (LAN)", variant="success", id="play_button_lan")
             yield Button("Quit", variant="error", id="quit_button")
 
     def on_mount(self):
