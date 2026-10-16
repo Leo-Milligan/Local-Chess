@@ -682,7 +682,6 @@ class ChessGame(Screen):
     @on(Input.Submitted)
     async def handle_user_input(self):
 
-        self.clear_message()
         command_line = self.query_one(Input)
         player_input = command_line.value.strip(" +#!?")
         command_line.value = ""
